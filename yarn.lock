@@ -2096,6 +2096,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-async-storage/async-storage@npm:^1.23.1":
+  version: 1.23.1
+  resolution: "@react-native-async-storage/async-storage@npm:1.23.1"
+  dependencies:
+    merge-options: "npm:^3.0.4"
+  peerDependencies:
+    react-native: ^0.0.0-0 || >=0.60 <1.0
+  checksum: 10c0/6cfdcab91f0e04f80f4aa91397eb4aedcd1124bf2a997cb730c7f2c70dad75d2aa0ca0f41576ed4e34544a1f79e090169f566366c32a89a41b74bf74bea1c1db
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-clean@npm:13.6.6":
   version: 13.6.6
   resolution: "@react-native-community/cli-clean@npm:13.6.6"
@@ -2274,6 +2285,22 @@ __metadata:
   bin:
     react-native: build/bin.js
   checksum: 10c0/de7fcf30c90f8188bb214bd480814b0caf54d3208d8c4d337d3dd9cd8c4431e027f15aec64ef255dd76a0f3bda36ec1ec83d010d4e22016be90a44bb8f4d27a2
+  languageName: node
+  linkType: hard
+
+"@react-native-community/datetimepicker@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@react-native-community/datetimepicker@npm:8.0.1"
+  dependencies:
+    invariant: "npm:^2.2.4"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-windows: "*"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 10c0/3f4597035de551f5bf77374097d0cb1707058cb591db45d18d312eb9e533274aa789380e7698ff1944437793dcf148d484f9d5ce3246c03258f24eb3a75c11e5
   languageName: node
   linkType: hard
 
@@ -6377,6 +6404,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-plain-obj@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "is-plain-obj@npm:2.1.0"
+  checksum: 10c0/e5c9814cdaa627a9ad0a0964ded0e0491bfd9ace405c49a5d63c88b30a162f1512c069d5b80997893c4d0181eadc3fed02b4ab4b81059aba5620bfcdfdeb9c53
+  languageName: node
+  linkType: hard
+
 "is-plain-object@npm:^2.0.4":
   version: 2.0.4
   resolution: "is-plain-object@npm:2.0.4"
@@ -7715,6 +7749,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"merge-options@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "merge-options@npm:3.0.4"
+  dependencies:
+    is-plain-obj: "npm:^2.1.0"
+  checksum: 10c0/02b5891ceef09b0b497b5a0154c37a71784e68ed71b14748f6fd4258ffd3fe4ecd5cb0fd6f7cae3954fd11e7686c5cb64486daffa63c2793bbe8b614b61c7055
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -8188,6 +8231,8 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.20.0"
     "@expo/vector-icons": "npm:^14.0.0"
+    "@react-native-async-storage/async-storage": "npm:^1.23.1"
+    "@react-native-community/datetimepicker": "npm:^8.0.1"
     "@react-navigation/native": "npm:^6.0.2"
     "@types/jest": "npm:^29.5.12"
     "@types/react": "npm:~18.2.45"
@@ -8208,6 +8253,7 @@ __metadata:
     react-dom: "npm:18.2.0"
     react-native: "npm:0.74.1"
     react-native-gesture-handler: "npm:~2.16.1"
+    react-native-modal-datetime-picker: "npm:^17.1.0"
     react-native-reanimated: "npm:~3.10.1"
     react-native-safe-area-context: "npm:^4.10.1"
     react-native-screens: "npm:3.31.1"
@@ -9188,6 +9234,18 @@ __metadata:
   peerDependencies:
     react: ^16.6.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/61ec9807878d8545750fa20f04a85189e59ebacba7a66c3feb14640bead8216d7bcf781c47432e7ab20bad57e4bf0a9a261cc34b9e83c35d981be1e28251e201
+  languageName: node
+  linkType: hard
+
+"react-native-modal-datetime-picker@npm:^17.1.0":
+  version: 17.1.0
+  resolution: "react-native-modal-datetime-picker@npm:17.1.0"
+  dependencies:
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    "@react-native-community/datetimepicker": ">=6.7.0"
+    react-native: ">=0.65.0"
+  checksum: 10c0/831ebb04f1f5de92f1bcf220063c92fce7fe745713524e889bca045e7256dde39934c10b67570394d1499da966af575355f466f66e6012247fcc0e8a6846a2a6
   languageName: node
   linkType: hard
 
