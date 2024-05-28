@@ -3,7 +3,7 @@ import { View } from 'react-native'
 import ProjectTitle from '../shared/ProjectTitle'
 import TodoCalendar from './TodoCalendar'
 
-const TodoList = () => {
+const TodoListStart = () => {
   return (
     <View>
       <ProjectTitle title='TodoList + Calender' />
@@ -12,4 +12,4 @@ const TodoList = () => {
   )
 }
 
-export default TodoList
+export default TodoListStart

@@ -11,7 +11,7 @@ import TabBar from './TabBar'
 import ProjectTitle from '../shared/ProjectTitle'
 
 
-const KakaoList = () => {
+const KakaoListStart = () => {
   const [isOpened, setIsOpened] = useState(true)
   const [selectedTabIdx, setSelectedTabIdx] = useState(0)
 
@@ -88,4 +88,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default KakaoList
+export default KakaoListStart

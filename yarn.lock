@@ -5081,6 +5081,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-image-loader@npm:~4.7.0":
+  version: 4.7.0
+  resolution: "expo-image-loader@npm:4.7.0"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/7db9df154f1b44e9877361e0707715503eaaf2b18968b6aecb6b0205612cf40bfd99ab8c6e6d7de3a5abd35267e9636963d5050e082af063d8e527763d597eb1
+  languageName: node
+  linkType: hard
+
+"expo-image-picker@npm:~15.0.5":
+  version: 15.0.5
+  resolution: "expo-image-picker@npm:15.0.5"
+  dependencies:
+    expo-image-loader: "npm:~4.7.0"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/fabc9428184c58c7d6d88f601cb5b5b74de24c575947cb2484a50c436d180c8d00c27ec5a28f1ba84cd6375e0a4a36b930ed9690a815c8e6f4ad492eaa78774c
+  languageName: node
+  linkType: hard
+
 "expo-keep-awake@npm:~13.0.1":
   version: 13.0.1
   resolution: "expo-keep-awake@npm:13.0.1"
@@ -8241,6 +8261,7 @@ __metadata:
     expo: "npm:~51.0.2"
     expo-constants: "npm:~16.0.1"
     expo-font: "npm:~12.0.4"
+    expo-image-picker: "npm:~15.0.5"
     expo-linking: "npm:~6.3.1"
     expo-router: "npm:~3.5.11"
     expo-splash-screen: "npm:~0.27.4"
@@ -8252,6 +8273,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-native: "npm:0.74.1"
+    react-native-dropdown-picker: "npm:^5.4.6"
     react-native-gesture-handler: "npm:~2.16.1"
     react-native-modal-datetime-picker: "npm:^17.1.0"
     react-native-reanimated: "npm:~3.10.1"
@@ -9205,6 +9227,16 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 10c0/2bdb6b93fbb1820b024b496042cce405c57e2f85e777c9aabd55f9b26d145408f9f74f5934676ffdc46f3dcff656d78413a6e43968e7b3f92eea35b3052e9053
+  languageName: node
+  linkType: hard
+
+"react-native-dropdown-picker@npm:^5.4.6":
+  version: 5.4.6
+  resolution: "react-native-dropdown-picker@npm:5.4.6"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/29b29d6168dc71386a0fd9dc5dedebd23cbb7baa977e4f37f6ff6fd13a800628e73e6624d0563b7471cec9a5dd76e196aed0e41d2da4bac8abefacbd1f0eb347
   languageName: node
   linkType: hard
 
