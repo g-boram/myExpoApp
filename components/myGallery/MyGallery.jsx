@@ -3,6 +3,7 @@ import { Button, Dimensions, FlatList, Image, SafeAreaView, StyleSheet, Text, To
 import { useGallery } from './hook/use-gallery'
 import MyDropDownPicker from './MyDropDownPicker';
 import TextInputModal from './TextInputModal';
+import BigImgModal from './BigImgModal';
 
 const width = Dimensions.get('screen').width;
 const columnSize = width / 3;
@@ -14,9 +15,9 @@ const MyGallery = () => {
     pickImage, 
     deleteImage,
     selectedAlbum,
-    modalVisible,
-    openModal,
-    closeModal,
+    textInputModalVisible,
+    openTextInputModal,
+    closeTextInputModal,
     albumTitle,
     setAlbumTitle,
     addAlbum,
@@ -26,13 +27,23 @@ const MyGallery = () => {
     closeDropDown,
     albums,
     selectAlbum,
+    deleteAlbum,
+    bigImgModalVisible,
+    openBigImgModal,
+    closeBigImgModal,
+    selectImage,
+    selectedImage,
+    moveToPrevImage,
+    moveToNextImage,
+    showPreviousArrow,
+    showNextArrow,
   } = useGallery();
 
   const onPressOpenGallery = () => {
     pickImage();
   }
   const onPressAddAlbum = () => {
-    openModal()
+    openTextInputModal()
   }
 
   const onSubmitEditing = () => {
@@ -41,12 +52,15 @@ const MyGallery = () => {
     // 1. 앨범에 타이틀 추가
     addAlbum()
     // 2. 모달 닫기 & TextInput의 value 초기화
-    closeModal()
+    closeTextInputModal()
     resetAlbumTitle()
   }
 
   const onPressBackdrop = () => {
-    closeModal()
+    closeTextInputModal()
+  }
+  const onPressBigImgBackDrop = () => {
+    closeBigImgModal()
   }
 
   const onPressHeader = () => {
@@ -62,7 +76,27 @@ const MyGallery = () => {
     closeDropDown();
   }
 
-  const renderItem = ({ item: { id, uri }, index }) => {
+  const onLongPressAlbum = (albumId) => {
+    deleteAlbum(albumId)
+  }
+
+  const onPressImage = (image) => {
+    selectImage(image)
+    openBigImgModal()
+  }
+
+  const onPressLeftArrow = () => {
+    moveToPrevImage()
+  }
+  
+  const onPressRightArrow = () => {
+    moveToNextImage()
+  }
+
+
+
+  const renderItem = ({ item: image, index }) => {
+    const { id, uri } = image
     const onLongPress = () => deleteImage(id);
     if (id === -1) {
       return (
@@ -81,7 +115,10 @@ const MyGallery = () => {
       )
     }
     return (
-      <TouchableOpacity onLongPress={onLongPress}>
+      <TouchableOpacity 
+        onPress={() => onPressImage(image)}
+        onLongPress={onLongPress}
+      >
         <Image 
           source={{ uri }} 
           style={{ width: columnSize, height: columnSize }}
@@ -100,15 +137,27 @@ const MyGallery = () => {
         onPressAddAlbum={onPressAddAlbum}
         albums={albums}
         onPressAlbum={onPressAlbum}
+        onLongPressAlbum={onLongPressAlbum}
       />
 
       {/* 앨범을 추가하는 TextInputModal */}
       <TextInputModal 
-        modalVisible={modalVisible}
+        textInputModalVisible={textInputModalVisible}
         albumTitle={albumTitle}
         setAlbumTitle={setAlbumTitle}
         onSubmitEditing={onSubmitEditing}
         onPressBackdrop={onPressBackdrop}
+      />
+
+      {/* 이미지를 크게 보는 Modal */}
+      <BigImgModal 
+        bigImgModalVisible={bigImgModalVisible}
+        onPressBackDrop={onPressBigImgBackDrop}
+        selectedImage={selectedImage}
+        onPressLeftArrow={onPressLeftArrow}
+        onPressRightArrow={onPressRightArrow}
+        showPreviousArrow={showPreviousArrow}
+        showNextArrow={showNextArrow}
       />
 
       {/* 이미지 리스트 */}

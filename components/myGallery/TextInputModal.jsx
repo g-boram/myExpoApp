@@ -1,12 +1,12 @@
 import React from 'react'
 import { Modal, TextInput, View, SafeAreaView, KeyboardAvoidingView, Platform, Pressable } from 'react-native'
 
-const TextInputModal = ({ modalVisible, albumTitle, setAlbumTitle, onSubmitEditing, onPressBackdrop }) => {
+const TextInputModal = ({ textInputModalVisible, albumTitle, setAlbumTitle, onSubmitEditing, onPressBackdrop }) => {
   return (
     <Modal
       animationType='slide'
       transparent={true}
-      visible={modalVisible}
+      visible={textInputModalVisible}
     >
       <KeyboardAvoidingView 
         behavior={Platform.OS === "ios" ? "padding" : "height"}
