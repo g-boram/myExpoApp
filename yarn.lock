@@ -3577,6 +3577,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:*":
+  version: 9.1.2
+  resolution: "bignumber.js@npm:9.1.2"
+  checksum: 10c0/e17786545433f3110b868725c449fa9625366a6e675cd70eb39b60938d6adbd0158cb4b3ad4f306ce817165d37e63f4aa3098ba4110db1d9a3b9f66abfbaf10d
+  languageName: node
+  linkType: hard
+
 "bl@npm:^4.1.0":
   version: 4.1.0
   resolution: "bl@npm:4.1.0"
@@ -5070,7 +5077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-font@npm:~12.0.4, expo-font@npm:~12.0.5":
+"expo-font@npm:~12.0.5":
   version: 12.0.5
   resolution: "expo-font@npm:12.0.5"
   dependencies:
@@ -5117,6 +5124,17 @@ __metadata:
     expo-constants: "npm:~16.0.0"
     invariant: "npm:^2.2.4"
   checksum: 10c0/a6550cacc3117dde92fe9758c3b97089dae8ce2d90a2d6dd4441571991c4c7e139beb9d5648f04eef2fccc52f00f1631f36717bcd070c62413c013a30ae7aa97
+  languageName: node
+  linkType: hard
+
+"expo-localization@npm:~15.0.3":
+  version: 15.0.3
+  resolution: "expo-localization@npm:15.0.3"
+  dependencies:
+    rtl-detect: "npm:^1.0.2"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/caa6f68a0f22a067b6940d7f7e64a68eb5f17a767d172aa5793bff24baa2d804b4f827027ea071d1e23f4d8b41f693cfb2790db095f95dadc1d41a3b07072398
   languageName: node
   linkType: hard
 
@@ -6024,6 +6042,17 @@ __metadata:
   version: 1.0.4
   resolution: "hyphenate-style-name@npm:1.0.4"
   checksum: 10c0/b19c3e2cd1dc426f6f893752fec08140abf79058a1b6238422e45373ed81389f02e1a2ba2ef4e9b2430d4e900a0f5ba12307de82320604e81ac1b722abd2ee62
+  languageName: node
+  linkType: hard
+
+"i18n-js@npm:^4.4.3":
+  version: 4.4.3
+  resolution: "i18n-js@npm:4.4.3"
+  dependencies:
+    bignumber.js: "npm:*"
+    lodash: "npm:*"
+    make-plural: "npm:*"
+  checksum: 10c0/545ce16b5fe9323d1a92637c91c6cd503c1065577fcbe96dabb34cae822a9da6642e2953eeb0e9e610a912b92f98c885c4c9717163e351593aaf0c2e5695442d
   languageName: node
   linkType: hard
 
@@ -7578,7 +7607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.13, lodash@npm:^4.17.19, lodash@npm:^4.17.21, lodash@npm:^4.17.4":
+"lodash@npm:*, lodash@npm:^4.17.13, lodash@npm:^4.17.19, lodash@npm:^4.17.21, lodash@npm:^4.17.4":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
@@ -7625,6 +7654,26 @@ __metadata:
   bin:
     loose-envify: cli.js
   checksum: 10c0/655d110220983c1a4b9c0c679a2e8016d4b67f6e9c7b5435ff5979ecdb20d0813f4dec0a08674fcbdd4846a3f07edbb50a36811fd37930b94aaa0d9daceb017e
+  languageName: node
+  linkType: hard
+
+"lottie-react-native@npm:6.7.0":
+  version: 6.7.0
+  resolution: "lottie-react-native@npm:6.7.0"
+  peerDependencies:
+    "@dotlottie/react-player": ^1.6.1
+    "@lottiefiles/react-lottie-player": ^3.5.3
+    react: "*"
+    react-native: ">=0.46"
+    react-native-windows: ">=0.63.x"
+  peerDependenciesMeta:
+    "@dotlottie/react-player":
+      optional: true
+    "@lottiefiles/react-lottie-player":
+      optional: true
+    react-native-windows:
+      optional: true
+  checksum: 10c0/a1df65252eb349414550a405b4fbb09e567404c123e98668701fcc325b38157e3f31a84c0563b1a4426417080b2ce5b901b1032910a3db695db96ffaf41030d6
   languageName: node
   linkType: hard
 
@@ -7689,6 +7738,13 @@ __metadata:
     promise-retry: "npm:^2.0.1"
     ssri: "npm:^10.0.0"
   checksum: 10c0/df5f4dbb6d98153b751bccf4dc4cc500de85a96a9331db9805596c46aa9f99d9555983954e6c1266d9f981ae37a9e4647f42b9a4bb5466f867f4012e582c9e7e
+  languageName: node
+  linkType: hard
+
+"make-plural@npm:*":
+  version: 7.4.0
+  resolution: "make-plural@npm:7.4.0"
+  checksum: 10c0/10f24e932865c88d4cdb14d4bb809ce8e615cae7d083c63ad008b3bcaf0d22941ca0bd76acd9cdd7ae4047563501104fff3c37ce8ad2bc5671facde1818fa57f
   languageName: node
   linkType: hard
 
@@ -8260,16 +8316,19 @@ __metadata:
     dayjs: "npm:^1.11.11"
     expo: "npm:~51.0.2"
     expo-constants: "npm:~16.0.1"
-    expo-font: "npm:~12.0.4"
+    expo-font: "npm:~12.0.5"
     expo-image-picker: "npm:~15.0.5"
     expo-linking: "npm:~6.3.1"
+    expo-localization: "npm:~15.0.3"
     expo-router: "npm:~3.5.11"
     expo-splash-screen: "npm:~0.27.4"
     expo-status-bar: "npm:~1.12.1"
     expo-system-ui: "npm:~3.0.4"
     expo-web-browser: "npm:~13.0.3"
+    i18n-js: "npm:^4.4.3"
     jest: "npm:^29.2.1"
     jest-expo: "npm:~51.0.1"
+    lottie-react-native: "npm:6.7.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-native: "npm:0.74.1"
@@ -8280,6 +8339,7 @@ __metadata:
     react-native-safe-area-context: "npm:^4.10.1"
     react-native-screens: "npm:3.31.1"
     react-native-web: "npm:~0.19.10"
+    react-string-format: "npm:^1.2.0"
     react-test-renderer: "npm:18.2.0"
     styled-components: "npm:^6.1.11"
     typescript: "npm:~5.3.3"
@@ -9415,6 +9475,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-string-format@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "react-string-format@npm:1.2.0"
+  checksum: 10c0/7d5f7bc86e504677fce2ab7ac719a9be6262f54b1daf8e2606a007759d8b038cf08836d2eb8be80313f81d980113ae2999198bb312cdf36f9dc94d214aaa2b4b
+  languageName: node
+  linkType: hard
+
 "react-test-renderer@npm:18.2.0":
   version: 18.2.0
   resolution: "react-test-renderer@npm:18.2.0"
@@ -9744,6 +9811,13 @@ __metadata:
   bin:
     rimraf: ./bin.js
   checksum: 10c0/f1e646f8c567795f2916aef7aadf685b543da6b9a53e482bb04b07472c7eef2b476045ba1e29f401c301c66b630b22b815ab31fdd60c5e1ae6566ff523debf45
+  languageName: node
+  linkType: hard
+
+"rtl-detect@npm:^1.0.2":
+  version: 1.1.2
+  resolution: "rtl-detect@npm:1.1.2"
+  checksum: 10c0/1b92888aafca1593314f837e83fdf02eb208faae3e713ab87c176804728efd3b1980d53b64f65f1fa593348087e852c5cd729b7b9372950f6e9b7be489afc0ca
   languageName: node
   linkType: hard
 

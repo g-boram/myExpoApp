@@ -6,6 +6,7 @@ import CalculatorStart from '@/components/calculator/CalculatorStart';
 import TodoListStart from '@/components/todoList/TodoListStart';
 import MyGalleryStart from '@/components/myGallery/MyGalleryStart';
 import KakaoBusStart from '@/components/kakaoBus/KakaoBusStart';
+import TranslationAppStart from '@/components/translationApp/TranslationAppStart';
 
 export default function HomeScreen() {
   return (
@@ -17,6 +18,7 @@ export default function HomeScreen() {
           <TodoListStart />
           <MyGalleryStart />
           <KakaoBusStart />
+          <TranslationAppStart />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
