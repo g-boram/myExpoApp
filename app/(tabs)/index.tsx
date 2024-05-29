@@ -5,6 +5,7 @@ import KakaoListStart from '@/components/kakao/KakaoListStart';
 import CalculatorStart from '@/components/calculator/CalculatorStart';
 import TodoListStart from '@/components/todoList/TodoListStart';
 import MyGalleryStart from '@/components/myGallery/MyGalleryStart';
+import KakaoBusStart from '@/components/kakaoBus/KakaoBusStart';
 
 export default function HomeScreen() {
   return (
@@ -15,6 +16,7 @@ export default function HomeScreen() {
           <CalculatorStart />
           <TodoListStart />
           <MyGalleryStart />
+          <KakaoBusStart />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
